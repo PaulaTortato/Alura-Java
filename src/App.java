@@ -7,8 +7,11 @@ public class App {
         // Extractor jsonExtractor = new ExtractorIMDB();
         // String url = "https://mocki.io/v1/9a7c1ca9-29b4-4eb3-8306-1adb9d159060";
 
-        Extractor jsonExtractor = new ExtractorNasa();
-        String url = "https://api.mocki.io/v2/549a5d8b/NASA-APOD";
+        // Extractor jsonExtractor = new ExtractorNasa();
+        // String url = "https://api.mocki.io/v2/549a5d8b/NASA-APOD";
+
+        Extractor jsonExtractor = new ExtractorLinguagens();
+        String url = "https://linguagens-api-pcwt.herokuapp.com/linguagens";
         
         ClientHTTP client = new ClientHTTP();
         String body = client.serverUp(url);
